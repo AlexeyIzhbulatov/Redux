@@ -34,6 +34,7 @@ const todo = (state = initialState, action) => {
             todos: state.todos.map(el => {
                 if(el.id === action.payload) return {...el, done: !el.done}
                 return el
+                d
             })
         }
      default:
